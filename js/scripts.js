@@ -12,6 +12,13 @@
 
 
 var palindromeChecker = function(userInput) {
-  return false;
-
-}
+  var originalArray = userInput.split("");
+  var reverseArray = userInput.split("").reverse();
+  var originalString = originalArray.toString();
+  var reverseString = reverseArray.toString();
+  if (originalString === reverseString) {
+    return true;
+  } else {
+    return false;
+  }
+};
